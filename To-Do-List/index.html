@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Todo App - Dark Theme</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="/Practice-JS/exercise6/script.js"></script> -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="todo-container">
+        <div class="todo-header">
+            <h1>My Tasks</h1>
+            <p>Stay organized, focused, and productive</p>
+        </div>
+        
+        <div class="todo-input">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button id="addBtn">Add</button>
+        </div>
+        
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+        
+        <div class="todo-list" id="todoList"> 
+            <!-- Tasks will be added here dynamically -->
+            <div class="empty-state">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <p>Your task list is empty</p>
+            </div>
+        </div>
+        
+        <div class="todo-footer">
+            <p>Click on a task to mark it as complete</p>
+        </div>
+    </div>
+
+    <script>
+     
+    </script>
+</body>
+</html>
