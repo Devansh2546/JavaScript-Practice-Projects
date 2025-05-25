@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master - Quiz App</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+
+<body>
+    <div class="container">
+        <div class="quiz-container">
+            <h1 class="title"><span class="accent">Quiz</span> Master</h1>
+
+            <!-- Welcome Screen -->
+            <div id="welcome-screen">
+                <div class="welcome-icon">✨</div>
+                <h2>Welcome to Quiz Master!</h2>
+                <p>Test your knowledge with our challenging questions. Are you ready to begin?</p>
+                <button id="start-btn" class="quiz-btn">Start Quiz</button>
+            </div>
+
+            <!-- Quiz Box -->
+            <div id="quiz-box" class="hidden">
+                <div class="progress-container">
+                    <span id="question-counter" class="question-counter">Question 1/10</span>
+                    <div class="timer" id="timer"> Time left:30s</div>
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div id="question" class="question-text">
+                    <!-- Question will be inserted here by JavaScript -->
+                </div>
+
+                <div id="options-container" class="options-container">
+                    <!-- Options will be inserted here by JavaScript -->
+                </div>
+            </div>
+
+                  <!-- Result Box -->
+      <div id="result-box" class="hidden">
+        <div class="score-circle">
+          <svg width="120" height="120" viewBox="0 0 120 120">
+            <circle class="score-circle-bg" cx="60" cy="60" r="54" />
+            <circle id="score-circle-fill" class="score-circle-fill" cx="60" cy="60" r="54" />
+          </svg>
+          <div class="score-text">
+            <div class="score-icon">🏆</div>
+            <span id="score-percentage">0%</span>
+          </div>
+        </div>
+
+        <h2>Quiz Completed!</h2>
+        <p id="score-message" class="score-message">Great job!</p>
+
+        <div class="score-box">
+          <p>You scored <span id="final-score" class="accent">0</span> out of <span id="total-questions" class="accent">10</span></p>
+        </div>
+
+        <button id="restart-btn" class="quiz-btn">Play Again</button>
+      </div>
+    </div>
+  </div>
+        </div>
+    </div>
+</body>
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+</html>
